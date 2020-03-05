@@ -6,7 +6,7 @@ const nativeEvents = new NativeEventEmitter(OT);
 
 const checkAndroidPermissions = () => new Promise((resolve, reject) => {
   PermissionsAndroid.requestMultiple([
-    PermissionsAndroid.PERMISSIONS.CAMERA,
+//     PermissionsAndroid.PERMISSIONS.CAMERA,
     PermissionsAndroid.PERMISSIONS.RECORD_AUDIO])
     .then((result) => {
       const permissionsError = {};
